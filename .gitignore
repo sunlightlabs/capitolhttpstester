@@ -1,0 +1,7 @@
+*.pyc
+*.swp
+*.json
+*.html
+settings.py
+virt/
+capitolhttpstester/

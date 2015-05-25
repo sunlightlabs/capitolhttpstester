@@ -1,0 +1,21 @@
+# put your sunlight api key here then rename this file settings.py
+# keys can be obtained at https://sunlightfoundation.com/api/accounts/register/
+API_KEY='YOUR SUNLIGHT KEY HERE'
+
+# how long to sleep between requests
+SLEEP_TIME=0.3
+
+# how long before socket connection times out , fine because we're testing on a reliable connection
+TIME_OUT=10
+
+# set a User-Agent ... senate denies python, curl, wget and probably others in a misguided attempt at "security"
+FAKE_HEADERS = { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.18 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.18'}
+
+# current list of committees in yaml
+us_cmte_curr_url = 'https://raw.githubusercontent.com/unitedstates/congress-legislators/master/committees-current.yaml'
+
+# current list of leadership in yaml
+us_leadership_url = 'https://raw.githubusercontent.com/timball/congress-legislators/timball/feature/leadership/leadership.yaml'
+
+# current list of support offices in yaml
+us_support_offices_url = 'https://raw.githubusercontent.com/timball/congress-legislators/timball/feature/congression-support/congressional-support.yaml'
